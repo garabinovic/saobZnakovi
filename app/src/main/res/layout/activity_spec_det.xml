@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="saobracajniznakovi.com.saobracajniznakovi.SpecDetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/SpecDetVinjeta"
+                android:src="@drawable/jedan19"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Shifra"
+                android:textStyle="bold"
+                android:id="@+id/specDetShifra"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/SpecDetVinjeta"
+                android:layout_toEndOf="@+id/SpecDetVinjeta"
+                android:layout_alignBottom="@+id/SpecDetVinjeta" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Kolicina:"
+                android:layout_below="@+id/SpecDetVinjeta"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold|italic"
+                android:id="@+id/specDetKolicina"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/number"
+                android:layout_below="@+id/specDetKolicina"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Unesite količinu"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Opis pozicije:"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold|italic"
+                android:id="@+id/specDetText21"
+                android:layout_below="@+id/number" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/specDetText21"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/opisEditText"
+                android:hint="Unesite specifične karkteristike"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Dimenzije:"
+                android:textStyle="bold|italic"
+                android:id="@+id/specDetText22"
+                android:layout_below="@id/opisEditText"
+                />
+
+            <RadioGroup
+                android:id="@+id/dimRBG"
+                android:layout_below="@id/specDetText22"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                >
+                <RadioButton
+                    android:id="@+id/rb11_rbg"
+                    android:text="@string/fi400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb12_rbg"
+                    android:text="@string/fi600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb13_rbg"
+                    android:text="@string/fi900"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb14_rbg"
+                    android:text="@string/spec"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Klasa retroreflesije:"
+                android:textStyle="bold|italic"
+                android:id="@+id/specDetText23"
+                android:layout_below="@id/dimRBG"
+                />
+
+            <RadioGroup
+                android:id="@+id/klasaRBG"
+                android:layout_below="@id/specDetText23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                >
+                <RadioButton
+                    android:id="@+id/rb21_rbg"
+                    android:text="@string/klas3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb22_rbg"
+                    android:text="@string/klas2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb23_rbg"
+                    android:text="@string/klas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb24_rbg"
+                    android:text="@string/specK"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dugme_odustani"
+                android:layout_margin="5dp"
+                android:id="@+id/odustaniButton"
+                android:layout_below="@+id/klasaRBG"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="klikOdustani"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dugme_pridruzi"
+                android:layout_margin="5dp"
+                android:id="@+id/dodajButton2"
+                android:layout_below="@+id/klasaRBG"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="klikPridruzi"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

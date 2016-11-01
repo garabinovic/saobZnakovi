@@ -1,0 +1,39 @@
+<resources>
+    <string name="wellcome">Dobrodošli!</string>
+    <string name="app_name">Saobraćajni Znakovi</string>
+    <string name="action_settings">Settings</string>
+    <string name="katalog_saob_znakova">Katalog saobraćajnih znakova </string>
+    <string name="katalog_znakova">Katalog znakova </string>
+    <string name="specifikacija">Napravi specifikaciju</string>
+    <string name="pravilnik">Pravilnik o saobraćajnoj signalizaciji</string>
+    <string name="zobs">Zakon o bezbednosti saobraćaja</string>
+    <string name="znakovi_opasnosti">Znakovi opasnosti</string>
+    <string name="znakovi_izricitih_naredbi">Znakovi izričitih naredbi</string>
+    <string name="ospti_znakovi_obavestenja">Opšti znakovi obaveštenja</string>
+    <string name="znakovi_obavestenja_vodjenje">Znakovi obaveštenja za vođenje saobraćaja</string>
+    <string name="znakovi_obavestenja_radovi">Znakovi obaveštenja za obeležavanje prepreka na putu i mesta na kojima se izvode radovi na putu</string>
+    <string name="znakovi_obavestenja_turisticka">Znakovi obaveštenja koji se odnose na turističku signalizaciju</string>
+    <string name="dopunske_table">Dopunkse table</string>
+    <string name="detalji">Detaljnije o znaku</string>
+
+    <string name="design">by Andrija Garabinović</string>
+    <string name="email">andrijag@gmail.com</string>
+
+    <string name="fi900">Ф900 [mm]</string>
+    <string name="fi600">Ф600 [mm]</string>
+    <string name="fi400">Ф400 [mm]</string>
+    <string name="pis"> prema pravilniku i standardu</string>
+    <string name="spec">prema opisu</string>
+
+    <string name="klas3">3. Klasa</string>
+    <string name="klas2">2. Klasa</string>
+    <string name="klas1">1. Klasa</string>
+    <string name="specK">prema opisu</string>
+
+    <string name="dugme_odustani">Odustani</string>
+    <string name="dugme_pridruzi">Pridruži</string>
+    <string name="pregled_spec">Pregled specifikacije</string>
+
+
+
+</resources>

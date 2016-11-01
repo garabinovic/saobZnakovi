@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="saobracajniznakovi.com.saobracajniznakovi.KatalogActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/znakovi_opasnosti"
+                android:id="@+id/katalog_button1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:onClick="katalogButton1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/znakovi_izricitih_naredbi"
+                android:id="@+id/katalog_button2"
+                android:layout_below="@+id/katalog_button1"
+                android:layout_marginTop="5dp"
+                android:onClick="katalogButton2"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ospti_znakovi_obavestenja"
+                android:id="@+id/katalog_button3"
+                android:layout_below="@+id/katalog_button2"
+                android:layout_marginTop="5dp"
+                android:onClick="katalogButton3"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/znakovi_obavestenja_vodjenje"
+                android:id="@+id/katalog_button4"
+                android:layout_below="@+id/katalog_button3"
+                android:layout_marginTop="10dp"
+                android:onClick="katalogButton4"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/znakovi_obavestenja_radovi"
+                android:id="@+id/katalog_button5"
+                android:layout_below="@+id/katalog_button4"
+                android:layout_marginTop="5dp"
+                android:onClick="katalogButton5"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/znakovi_obavestenja_turisticka"
+                android:id="@+id/katalog_button6"
+                android:layout_below="@+id/katalog_button5"
+                android:layout_marginTop="5dp"
+                android:onClick="katalogButton6"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dopunske_table"
+                android:id="@+id/katalog_button7"
+                android:layout_below="@+id/katalog_button6"
+                android:layout_marginTop="5dp"
+                android:onClick="katalogButton7"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

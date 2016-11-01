@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="saobracajniznakovi.com.saobracajniznakovi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".KatalogActivity"
+            android:label="@string/katalog_znakova"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ListActivity"
+            android:label="@string/znakovi_opasnosti"
+            android:parentActivityName=".KatalogActivity" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/detalji" />
+        <activity
+            android:name=".SpecActivity"
+            android:label="@string/specifikacija"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".SpecDetActivity"
+            android:label="Odabrana pozicija"/>
+
+        <activity
+            android:name=".SpecListActivity"
+            android:label="Lista Pozicija"
+            android:parentActivityName=".SpecActivity"/>
+
+        <activity
+            android:name=".ZakonActivity"
+            android:label="ZOBS"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".PravilnikActivity"
+            android:label="POSS"
+            android:parentActivityName=".MainActivity"/>
+    </application>
+
+</manifest>

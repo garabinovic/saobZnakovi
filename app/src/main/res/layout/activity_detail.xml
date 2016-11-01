@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Grupa znaka"
+        android:id="@+id/detGrupa"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Shifra"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/specDetShifra"
+        android:layout_below="@+id/detGrupa"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/SpecDetVinjeta"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/specDetShifra"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dva1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Naziv"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:id="@+id/specDetNaziv"
+        android:layout_below="@+id/SpecDetVinjeta"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/specDetNaziv">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webview"
+            android:background="#ffffffff"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+        </WebView>
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:text="Opis"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textStyle="italic"-->
+            <!--android:id="@+id/detOpis"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="right|left" />-->
+
+    </ScrollView>
+
+</RelativeLayout>
